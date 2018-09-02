@@ -1,0 +1,258 @@
+// 开始头部css样式
+#header {
+    .row {
+        >div {
+            line-height: 45px;
+            height: 45px;
+            border-right: 1px solid rgb(204, 204, 204);
+            &:last-child {
+                border-right: none;
+            }
+            a {
+                .a(12px, rgb(51, 51, 51));
+            }
+        }
+    }
+}
+
+// 开始导航css样式
+.navbar {
+    font-size: 14px;
+    margin-bottom: 0px;
+    .container {
+        margin-top: 10px;
+        .navbar-brand {
+            >i {
+                font-size: 30px;
+                &.icon-icon {
+                    color: #e92322;
+                }
+                &.icon-logo {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+// 开始轮播图css样式
+#slide {
+    .carousel-inner {
+        .item {
+            .large-image {
+                display: block;
+                height: 400px;
+                background-position: center center;
+            }
+            .small-image {
+                height: 100%;
+            }
+        }
+    }
+}
+
+//特色专题区域
+#featrue {
+    background-color: white;
+    height: 150px;
+    margin-top: 40px;
+    .border-c(1px, rgb(204, 204, 204));
+    a {
+        color: rgb(102, 102, 102);
+        margin-bottom: 20px;
+        display: block;
+        text-decoration: none;
+    }
+}
+
+//预约区域
+#booking {
+    background-color: white;
+    .border-c(1px, rgb(204, 204, 204));
+    line-height: 55px;
+    .pull-right {
+        >a {
+            color: rgb(35, 82, 124);
+        }
+    }
+}
+
+//推荐区域
+#products {
+    padding: 40px;
+    background-color: rgb(240, 240, 240);
+    a {
+        .a(14px;
+        rgb(51, 51, 51));
+    }
+    .container {
+        .ul-wapper {
+            overflow: auto;
+            >ul {
+                width: 660px;
+            }
+        }
+    }
+}
+
+#products .tab-content {
+    .tab-pane {
+        >.row {
+            >div {
+                margin-top: 20px;
+                .product {
+                    background-color: white;
+                    display: flex;
+                    .product-left {
+                        flex: 1;
+                        height: 160px;
+                        >h4 {
+                            text-align: center;
+                            line-height: 30px;
+                        }
+                        >.row {
+                            margin: 0;
+                            >div>div {
+                                background-color: red;
+                            }
+                            >div {
+                                margin-bottom: 10px;
+                                >p {
+                                    margin-bottom: 0;
+                                }
+                                &:nth-child(2n) {
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        &::before {
+                            content: "\e915";
+                            font-family: 'itcast';
+                            position: absolute;
+                            left: 15px;
+                            top: -6px;
+                            font-size: 30px;
+                        }
+                    }
+                    .product-right {
+                        width: 120px;
+                        border-left: 1px dashed #ccc;
+                        height: 160px; // 使用伸缩盒子，主轴垂直，让内容主轴居中
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        justify-content: center;
+                        >p {
+                            margin-bottom: 0;
+                            text-align: center;
+                            strong {
+                                font-size: 30px;
+                            }
+                        } //::before在前面添加一个伪元素
+                        // ::after在前面添加一个伪元素
+                        &::before,
+                        &::after {
+                            content: "";
+                            width: 16px;
+                            height: 16px;
+                            background-color: #eee;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: -8px;
+                        }
+                        &::before {
+                            top: -8px;
+                        }
+                        &::after {
+                            bottom: -8px;
+                        }
+                        .tooltips {
+                            a {
+                                margin-left: 5px;
+                                text-decoration: none;
+                                padding: 2px;
+                                .a(14px, red);
+                                border: 1px solid red;
+                                &:last-child {
+                                    color: greenyellow;
+                                    border: 1px solid greenyellow;
+                                }
+                            }
+                        }
+                    }
+                }
+                >div.hong {
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+//新闻区域
+#news {
+    .container {
+        >div:first-child{
+            h4{
+                position: relative;
+                width: 100%;
+                padding: 30px 0px 20px 0px;
+                font-size: 20px;
+                text-align: center;
+                border-bottom: 1px dashed #ccc;
+                &::before{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    position: absolute;
+                    right: -10px;
+                    bottom: -5px;
+                }
+            }
+            
+        }
+        >div:nth-child(2) {
+            font-size: 30px;
+            margin-top: 25px;
+        }
+        >div:last-child {
+            font-size: 14px;
+            margin-top: 25px;
+            li{
+                color: rgb(95, 95, 95);
+                list-style: none;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+//合作伙伴
+#partner{
+    padding: 40px 0px;
+    .container{
+        >h3{
+            text-align: center;
+            font-size: 40px;
+        }
+        >ul{
+            display: flex;
+            justify-content: space-around;
+            >li{
+                flex: 1;
+                font-size: 50px;
+                list-style: none;
+                >a{
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

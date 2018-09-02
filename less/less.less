@@ -1,0 +1,49 @@
+// 1、引入函数
+@import "hanshu.less";
+// 2、引入样式
+@import 'var.less';
+#header {
+    .border-c(1px, rgb(204, 204, 204));
+}
+
+@media screen and(max-width: 768px){
+    #products{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and(max-width: 992px){
+    .container{
+        >div:nth-child(2){
+            >ul{
+                display: flex;
+                justify-content: space-around;
+                >li{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+    #partner{
+        .container{
+            h3{
+                font-size: 20px;
+            }
+            >ul{
+                padding: 10px;
+                display: flex;
+                justify-content: space-around;
+                >li{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
